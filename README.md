@@ -1,4 +1,4 @@
-# SendTeamsNotifications Package
+# The sendteamsnotifications Package
 
 The `sendteamsnotifications` package is a Go library designed to facilitate sending custom notifications to Microsoft Teams channels using incoming webhooks. It allows users to craft messages with a summary, activity titles, subtitles, and key-value fact pairs to deliver rich and informative updates directly to Teams.
 
@@ -7,7 +7,7 @@ The `sendteamsnotifications` package is a Go library designed to facilitate send
 To install the `sendteamsnotifications` package, you can use `go get`:
 
 ```
-go get -u github.com/domenicomastrangelo/sendteamsnotifications
+go get -u github.com/domenicomastrangelo/send-teams-notifications
 ```
 
 ## Usage
@@ -15,7 +15,7 @@ To use the sendteamsnotifications package in your Go application, you need to fo
 
 ### Import the Package:
 ```
-import "github.com/yourusername/sendteamsnotifications"
+import sendteamsnotifications "github.com/domenicomastrangelo/send-teams-notifications"
 ```
 
 ### Initialize with Webhook URL:
@@ -44,7 +44,7 @@ Here's a full example that sends a notification to a Microsoft Teams channel:
 package main
 
 import (
-    "github.com/yourusername/sendteamsnotifications"
+    sendteamsnotifications "github.com/domenicomastrangelo/send-teams-notifications"
 )
 
 func main() {
